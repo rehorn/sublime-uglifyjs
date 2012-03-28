@@ -1,0 +1,15 @@
+{
+   "cmd": [
+        "node",
+        "${packages}/UglifyJS/bin/uglifyjs", 
+        "-o", "${file_path}/${file_base_name}.min.js", "$file"
+    ],
+   "windows": {
+        "cmd": [
+            "node",
+            "${packages}/UglifyJS/bin/uglifyjs", 
+            "-o", "${file_path}/${file_base_name}.min.js", "$file"
+        ]
+    },
+   "selector": "source.js"
+}
